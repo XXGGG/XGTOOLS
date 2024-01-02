@@ -35,8 +35,6 @@ body {
     align-items: center;
     box-sizing: border-box;
     padding: 10px;
-    font-family: "Caveat";
-    font-weight: 700;
     font-size: 24px;
 }
 .toggleBtn {
