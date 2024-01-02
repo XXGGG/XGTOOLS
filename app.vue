@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="XGTools">
     <div class="top_nav">
         <RouterLink to="/" class="logo" p-4 i-tabler-tools></RouterLink>
         <div>XGTools</div>
@@ -15,26 +15,14 @@ import { toggleDark } from '~/logics'
 
 
 <style>
-/* body {  
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  background-image: url('/bg.svg');
-  background-size: 40px 40px;
-}
-.dark body{
-  color: rgba(255, 255, 255, 0.8);
-  background-image: url('/bg-dark.svg');
-} */
-
 .top_nav {
-    width: calc(100vw - 20px);
-    margin: 10px;
+    width: 100vw;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
     font-family: "Caveat";
     font-weight: 700;
     font-size: 24px;
