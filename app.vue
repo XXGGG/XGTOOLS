@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top">
+    <div class="top_nav">
         <RouterLink to="/" class="logo" p-4 i-tabler-tools></RouterLink>
         <div>XGTools</div>
         <div p-4 i-line-md-moon-filled-alt-loop dark:i-line-md-moon-filled-alt-to-sunny-filled-loop-transition
@@ -15,7 +15,7 @@ import { toggleDark } from '~/logics'
 
 
 <style>
-body {  
+/* body {  
   background-color: #fff;
   color: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -25,9 +25,9 @@ body {
 .dark body{
   color: rgba(255, 255, 255, 0.8);
   background-image: url('/bg-dark.svg');
-}
+} */
 
-.top {
+.top_nav {
     width: calc(100vw - 20px);
     margin: 10px;
     display: flex;
@@ -35,6 +35,8 @@ body {
     align-items: center;
     box-sizing: border-box;
     padding: 10px;
+    font-family: "Caveat";
+    font-weight: 700;
     font-size: 24px;
 }
 .toggleBtn {
