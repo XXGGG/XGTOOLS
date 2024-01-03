@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
-  }, 
+  },
   modules: [
     "@nuxt/image",
     "@nuxt/ui",
@@ -24,4 +24,5 @@ export default defineNuxtConfig({
     global: true,
     icons: "all",
   },
+  css: ['~/assets/css/main.css']
 });

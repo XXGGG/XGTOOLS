@@ -11,6 +11,23 @@
 </template>
 <script setup lang='ts'>
 import { toggleDark } from '~/logics'
+
+useHead({
+  title: 'XGTools',
+  meta: [
+    { name: 'description', content: 'A XGTools.' },
+    { name: 'charset', content: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'}
+  ],
+})
+useSeoMeta({
+  title: 'XGTools',
+  ogTitle: 'XGTools',
+  description: 'A Collection of Web Tools.',
+  ogDescription: 'A Collection of Web Tools.',
+  ogImage: 'OG-XGTools.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 

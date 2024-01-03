@@ -52,7 +52,7 @@ let app_list = [
     {
         'icon': 'i-solar-tag-bold-duotone',
         'title': 'Ai绘图-Tag',
-        'url': '/get-ip',
+        'url': '/ai-tag',
         'favorite': false,
     },
 ]
