@@ -14,7 +14,6 @@
                 <div class="title">{{ i.title }}</div>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -27,7 +26,7 @@ const go_router = (url: string) => {
 let app_list = [
     {
         'icon': 'i-solar-notes-bold-duotone',
-        'title': '译字',
+        'title': '简 - 繁',
         'url': '/switch-font',
         'favorite': false,
     },
@@ -38,28 +37,30 @@ let app_list = [
         'favorite': false,
     },
     {
-        'icon': 'i-solar-map-bold-duotone',
-        'title': 'Sitemap',
-        'url': '/sitemap',
-        'favorite': false,
-    },
-    {
-        'icon': 'i-solar-map-point-wave-bold-duotone',
-        'title': 'IP地址',
-        'url': '/get-ip',
-        'favorite': false,
-    },
-    {
         'icon': 'i-solar-tag-bold-duotone',
-        'title': 'Ai绘图-Tag',
+        'title': 'Tag提示词',
         'url': '/ai-tag',
+        'favorite': false,
+    },
+    {
+        'icon': 'i-solar-posts-carousel-vertical-bold-duotone',
+        'title': 'Test-页面滚动',
+        'url': '/test-scroll',
+        'favorite': false,
+    },
+    {
+        'icon': 'i-solar-mouse-circle-line-duotone',
+        'title': 'Test-鼠标',
+        'url': '/test-mouse',
         'favorite': false,
     },
 ]
 </script>
 
 <style scoped>
-
+.Home{
+    padding-top: 80px;
+}
 
 .main {
     max-width: 1200px;

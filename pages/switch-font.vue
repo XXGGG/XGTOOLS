@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="centenr">
         <div class="SwitchFont">
             <div class="select_box_1">
                 <USelect class="USelect" v-model="from_type" :options="countries" option-attribute="name"
@@ -43,15 +43,12 @@ const countries = [{
 
 const Change_select = (who: any) => {
     if (who == 'swop') {
-        console.log(0)
         from_type.value = old_to_type.value
         to_type.value = old_from_type.value
     } else if (who == 'from' && to_type.value == from_type.value) {
-        console.log(1)
         to_type.value = old_from_type.value
         old_to_type.value = old_from_type.value
     } else if (who == 'to' && to_type.value == from_type.value) {
-        console.log(2)
         from_type.value = old_to_type.value
         old_from_type.value = old_to_type.value
     }
@@ -69,13 +66,13 @@ const Change_select = (who: any) => {
 }
 
 const convertText = async () => {
-    console.log(from_type.value, to_type.value)
+    // console.log(from_type.value, to_type.value)
     const converter = await Converter({ from: from_type.value, to: to_type.value });
     convertedText.value = converter(originalText.value);
 };
 
 const txeTrevnoc = async () => {
-    console.log(from_type.value, to_type.value)
+    // console.log(from_type.value, to_type.value)
     const converter = await Converter({ from: to_type.value, to: from_type.value });
     originalText.value = converter(convertedText.value);
 };
@@ -83,6 +80,14 @@ const txeTrevnoc = async () => {
 </script>
 
 <style scoped>
+.centenr {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 76px);
+    justify-content: center;
+    align-items: center;
+}
+
 .SwitchFont {
     margin: auto;
     display: flex;
@@ -128,11 +133,12 @@ const txeTrevnoc = async () => {
     .UTextarea {
         width: 300px;
     }
+
     .select_box_1 {
         gap: 0px
     }
+
     .USelect {
         width: 300px;
     }
-}
-</style>
+}</style>

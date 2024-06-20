@@ -32,8 +32,11 @@ useSeoMeta({
 
 
 <style>
+.XGTools{
+  /* height: calc(100vh + 2000px); */
+}
 .top_nav {
-    width: 100vw;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -43,6 +46,10 @@ useSeoMeta({
     font-family: "Caveat";
     font-weight: 700;
     font-size: 24px;
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 .toggleBtn {
     cursor: pointer;
